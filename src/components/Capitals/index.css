@@ -1,0 +1,42 @@
+/* Write your CSS here */
+.big-container {
+  background-color: #93c5fd;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.small-conatainer {
+  background-color: #f8fafc;
+  background-size: cover;
+  width: 60%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.heading {
+  color: #1e293b;
+  font-family: 'roboto';
+  font-size: 25px;
+  font-weight: bold;
+}
+.option {
+  color: #323f4b;
+  font-family: 'roboto';
+  font-size: 14px;
+}
+.label {
+  color: #323f4b;
+  font-family: 'roboto';
+  font-size: 12px;
+}
+.para {
+  color: #000000;
+  font-family: 'roboto';
+  font-size: 14px;
+  font-weight: bold;
+}
