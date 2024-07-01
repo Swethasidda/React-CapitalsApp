@@ -40,7 +40,8 @@ class Capital extends Component {
   getCountry = () => {
     const {activeCountryId} = this.state
     const filteredCapital = countryAndCapitalsList.find(
-      each => each.id.toLocaleLowerCase() === activeCountryId.toLocaleLowerCase(),
+      each =>
+        each.id.toLocaleLowerCase() === activeCountryId.toLocaleLowerCase(),
     )
     console.log(activeCountryId)
     console.log(filteredCapital)
@@ -56,11 +57,7 @@ class Capital extends Component {
         <div className="small-conatainer">
           <form>
             <h1 className="heading">Countries And Capitals</h1>
-            <select
-              id="label"
-              onChange={this.onChangeCapital}
-              value={activeCountryId}
-            >
+            <select id="label" onChange={this.onChangeCapital}>
               {countryAndCapitalsList.map(each => (
                 <option className="option" key={each.id} value={each.id}>
                   {each.capitalDisplayText}
